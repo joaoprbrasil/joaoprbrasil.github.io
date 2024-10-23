@@ -3,6 +3,13 @@ body{
     margin: 0;
 }
 
+svg:hover {
+    rotate: 360deg;
+  }
+  svg {
+    transition: width 1s, height 1s, background-color 1s, rotate 1s;
+  }
+
 .links{
     list-style-type: none;
     display: flex;
@@ -12,7 +19,18 @@ body{
 .cat{
     height: 400px;
     width: 400px;
+    border-radius: 500px;
+    border: 5px solid #000000;
 }
+
+.cat:hover{
+    rotate: 360deg;
+    border-radius: 500px;
+    border: 5px solid #000000;
+    }
+    .cat{
+    transition: width 1s, height 1s, background-color 1s, rotate 1s;
+    }
 
 li{
     display: flex;
@@ -84,7 +102,6 @@ li{
 .img-project{
     height: 180px;
     width: 280px;
-    border-radius: 5px;
     border-radius: 5px;
     border: 5px solid #000000;
 }
